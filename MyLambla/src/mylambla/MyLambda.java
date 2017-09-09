@@ -21,9 +21,7 @@ public class MyLambda {
         
         double sum = summa(list, (x)->x<0);
         System.out.println(sum);
-        
-        double s2 = list.stream().filter((x)->x<0).mapToDouble(x->x).sum();
-        System.out.println(s2);
+
     }
     
 }
