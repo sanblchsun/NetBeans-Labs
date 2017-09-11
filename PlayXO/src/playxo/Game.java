@@ -12,8 +12,8 @@ public class Game {
         while (true) {            
             coordinateX = scannerXY("Введите координату х: ");
             coordinateY = scannerXY("Введите координату у: ");    
-            if(" ".equals(Board.boardXO[coordinateX-1][coordinateY-1])) {
-                Board.boardXO[coordinateX-1][coordinateY-1] = players.getFig().toString();
+            if(" ".equals(Board.boardXO[coordinateY-1][coordinateX-1])) {
+                Board.boardXO[coordinateY-1][coordinateX-1] = players.getFig().toString();
                 break;
             } else {
                     System.out.println("Поле занято");

@@ -10,7 +10,7 @@ public class Main {
         Player[] players = {new Player("Sasha", Figure.X),
                                 new Player("Olia", Figure.O)};
         int turnSwitch = 0;
-        
+        View.viewBoard();
         while (true) {  
             System.out.println("Играет: " + players[turnSwitch].getName()); 
             Game.gameStep(players[turnSwitch]);
