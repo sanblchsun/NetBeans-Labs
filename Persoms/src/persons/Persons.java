@@ -17,7 +17,7 @@ public class Persons {
         //for(PersonsObj p:list) System.out.println(p);
         //list.stream().forEach(t -> System.out.println(t));
         //list.stream().forEach(System.out::println);
-        list.stream().filter((t) -> t.getAge()>18).
+        list.stream().filter((t) -> t.test(18)).
                 sorted((p1,p2)->p1.compareTo(p2)).
                 forEach(System.out::println);
     }

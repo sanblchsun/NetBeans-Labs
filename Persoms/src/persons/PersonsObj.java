@@ -2,7 +2,7 @@ package persons;
 
 import java.util.function.Predicate;
 
-public class PersonsObj implements Comparable<PersonsObj>{
+public class PersonsObj implements Comparable<PersonsObj>, Predicate<Integer>{
     private String name;
     private int age; 
 
@@ -28,4 +28,9 @@ public class PersonsObj implements Comparable<PersonsObj>{
         PersonsObj per = (PersonsObj)obj;
         return age-per.age;
     }   
+
+    @Override
+    public boolean test(Integer t) {
+        return this.age>t;
+    }
 }
