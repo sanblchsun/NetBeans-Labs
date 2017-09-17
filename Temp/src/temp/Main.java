@@ -6,12 +6,12 @@ public class Main {
         sw.addLS(new Lamp());
         sw.addLS(new Radio());
         sw.addLS(
-               new Electrisity() {
-            @Override
-            public void electrisityOn() {
-                System.out.println("Пожар");
+            new Electrisity() {
+                @Override
+                public void electrisityOn() {
+                    System.out.println("Пожар");
+                }
             }
-        }
         );
         
         sw.swichOn();
