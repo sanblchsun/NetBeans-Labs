@@ -1,14 +1,17 @@
 package temp;
 
-import java.util.ArrayList;
 import java.util.List;
+import java.util.ArrayList;
 
 public class Swich {
-    public List<Electrucity> els = new ArrayList<>();
+    private List<Electrisity> ls = new ArrayList<>();
     
     public void swichOn() {
         System.out.println("Выключатель включен");
-        for(Electrucity el:els) if(el!=null) el.electrucityOn();
-    }   
+        for(Electrisity el:ls) if(el!=null) el.electrisityOn();
+    }
     
+    public void addLS(Electrisity el) {
+        ls.add(el);
+    }
 }

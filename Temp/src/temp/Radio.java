@@ -1,13 +1,12 @@
 package temp;
 
-public class Radio implements Electrucity{
-    
+public class Radio implements Electrisity{
     public void radioOn() {
-        System.out.println("Радио включен");
+        System.out.println("Радио включено");
     }
 
     @Override
-    public void electrucityOn() {
+    public void electrisityOn() {
         radioOn();
     }
     

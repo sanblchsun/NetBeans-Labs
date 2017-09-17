@@ -1,13 +1,12 @@
 package temp;
 
-public class Lamp implements Electrucity{
-    
-    public void lampPower() {
-        System.out.println("Лампа вкдючена");
+public class Lamp implements Electrisity {
+    public void lampOn() {
+        System.out.println("Лампа включена");
     }
 
     @Override
-    public void electrucityOn() {
-        lampPower();
+    public void electrisityOn() {
+        lampOn();
     }
 }
