@@ -14,4 +14,8 @@ public class Swich {
     public void addLS(Electrisity el) {
         ls.add(el);
     }
+    
+    public void fire() {
+        System.out.println("Fire");
+    }
 }
