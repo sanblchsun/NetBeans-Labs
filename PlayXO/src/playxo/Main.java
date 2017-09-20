@@ -15,7 +15,7 @@ public class Main {
             System.out.println("Играет: " + players[turnSwitch].getName()); 
             Game.gameStep(players[turnSwitch]);
             View.viewBoard();
-            if(Victory.status(players[turnSwitch].getFig().toString())) break;
+            if(Victory.status(players[turnSwitch].getFig())) break;
             if(turnSwitch==0)turnSwitch=1;else turnSwitch=0;
         }
         

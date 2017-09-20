@@ -1,5 +1,5 @@
 package playxo;
 
 public class Board {
-   public static String[][] boardXO = {{" "," "," "},{" "," "," "},{" "," "," "}};
+   public static Figure[][] boardXO = new Figure[3][3];
 }

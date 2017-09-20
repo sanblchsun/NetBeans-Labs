@@ -1,7 +1,7 @@
 package playxo;
 
 public class Victory {
-    public static boolean status(String fig) {
+    public static boolean status(Figure fig) {
         boolean resalt = false;
         if(Board.boardXO[0][0]==fig && Board.boardXO[0][1]==fig && Board.boardXO[0][2]==fig) return true;
         else if(Board.boardXO[1][0]==fig && Board.boardXO[1][1]==fig && Board.boardXO[1][2]==fig) return true;
