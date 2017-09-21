@@ -1,4 +1,4 @@
-package temp;
+package lamblaInterface;
 
 public class Main {
         

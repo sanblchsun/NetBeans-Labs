@@ -1,4 +1,4 @@
-package temp;
+package lamblaInterface;
 
 public class Radio implements Electrisity{
     public void radioOn() {

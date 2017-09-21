@@ -1,4 +1,4 @@
-package temp;
+package lamblaInterface;
 
 public class Lamp implements Electrisity {
     public void lampOn() {
