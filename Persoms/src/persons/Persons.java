@@ -20,6 +20,18 @@ public class Persons {
         list.stream().filter((t) -> t.test(18)).
                 sorted((p1,p2)->p1.compareTo(p2)).
                 forEach(System.out::println);
+        double countPersons = 0;
+        double summAgePerson =0; 
+        
+        for(PersonsObj per:list) {
+            if(per.getAge()>18) {
+                ++countPersons;
+                summAgePerson+=per.getAge();
+            }
+        }
+        System.out.println("Средний возраст совершеннолетних - " + summAgePerson/countPersons);
+        
+        System.out.println(list.stream().filter((t) -> t.getAge()>18).mapToInt((p) -> p.getAge()).average().getAsDouble());
     }
     
 }
