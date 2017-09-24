@@ -15,10 +15,13 @@ public class Main {
             System.out.println("Играет: " + players[turnSwitch].getName()); 
             Game.gameStep(players[turnSwitch]);
             View.viewBoard();
-            if(Victory.status(players[turnSwitch].getFig())) break;
-            if(turnSwitch==0)turnSwitch=1;else turnSwitch=0;
-        }
-        
+            if(turnSwitch==0) {
+                if(Victory.status((t) -> t==players[0].getFig())) break;               
+                turnSwitch=1;}
+            else {
+                if(Victory.status((t) -> t==players[1].getFig())) break;
+                turnSwitch=0;}
+        }       
         System.out.println("Выиграл!!!!!!!!!!!!!!!! " + players[turnSwitch].getName());
     }
  }
