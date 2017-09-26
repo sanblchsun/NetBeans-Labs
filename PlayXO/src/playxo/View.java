@@ -1,6 +1,9 @@
 package playxo;
 
 public class View {
+    
+    private View() {}
+    
     public static void viewBoard() {
         System.out.println("(X1)(X2)(X3)");
         for (int i=0;i<Board.boardXO.length;++i) {
@@ -11,8 +14,7 @@ public class View {
                 else System.out.print("   ");
             }
             System.out.println("(Y" + (i+1) + ")");
-        }
-        
+        }        
         System.out.println("");
     }
 }

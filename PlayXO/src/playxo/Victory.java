@@ -3,6 +3,9 @@ package playxo;
 import java.util.function.Predicate;
 
 public class Victory {
+
+    private Victory() {}
+    
     public static boolean status(Predicate<Figure> pre) {
         for(int i=0;i<Board.boardXO.length;++i){
             if(pre.test(Board.boardXO[i][0]) && pre.test(Board.boardXO[i][1]) && pre.test(Board.boardXO[i][2])) return true;    
