@@ -1,6 +1,6 @@
 package playxo;
 
-public class Player {
+public final class Player {
     private String name = null;
     private Figure fig = null;
     private static int swich = 1;
